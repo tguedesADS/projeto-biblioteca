@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icon/site.webmanifest">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Biblioteca Guedes</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="titulo">Biblioteca Guedes</h1>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="./index.html">Home <i class="bx bxs-home-heart"></i></a>
+            </li>
+            <li>
+              <a href="./page-livros.html"
+                >Livros <i class="bx bx-library"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="sessao-livros">
+        <h2>Livros Disponíveis</h2>
+
+        <div class="box-input">
+          <input type="search" id="search" placeholder="Buscar um livro..."/><i
+            class="bx bx-search-alt-2"
+          ></i>
+        </div>
+        <button id="btn-livro">
+          <a href="./page-add-livro.html">Novo Livro</a>
+        </button>
+
+        <div class="cards-livro" id="cards">
+          <!-- <div class="card-livro">
+            <h4 class="nome-livro" id="nome-livro">Nome do Livro</h4>
+            <span class="nome-autor" id="nome-autor">Nome do Autor</span>
+            <p class="ano-livro">Publicado em:<span id="ano-livro"></span></p>
+            <p class="nota-livro">Avaliação: <span id="nota"></span></p>
+            <div class="genero-livro">
+              <span id="genero">Gênero</span>  
+              <span class="remover" id="remover"><i class='bx bx-x-circle'></i>Excluir</span>
+            </div>
+          </div>     -->
+        </div>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

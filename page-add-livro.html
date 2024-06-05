@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icon/site.webmanifest">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Biblioteca Guedes</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="titulo">Biblioteca Guedes</h1>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="./index.html">Home <i class="bx bxs-home-heart"></i></a>
+            </li>
+            <li>
+              <a href="./page-livros.html"
+                >Livros <i class="bx bx-library"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <br /><br /><br />
+      <a href="./page-livros.html" id="voltar"
+        ><i class="bx bxs-left-arrow-square"></i>Voltar</a
+      >
+
+      <section class="sessao-add-livro">
+        <div class="box-add-livro">
+          <div id="icon-livro">
+            <i class="bx bxs-book-reader"></i>
+          </div>
+
+          <form  class="form-box" id="formulario">
+            <div class="input-box">
+              <label>Nome do Livro: </label>
+              <input type="text" class="input-livro" id="input-livro" required/>
+            </div>
+
+            <div class="input-box">
+              <label>Autor: </label>
+              <input type="text" class="input-autor" id="input-autor" required/>
+            </div>
+            <div class="input-box">
+              <label>Ano do Lançamento: </label>
+              <input type="number" class="input-data"  id="input-data" required/>
+            </div>
+            <div class="input-box">
+              <label>Gênero: </label>
+              <input type="text" class="input-genero" id="input-genero" required/>
+            </div>
+            <div class="input-box">
+              <label>Avaliação: </label>
+              <input type="number" class="input-nota"  id="input-nota" required/>
+            </div>
+            <div class="btn-page-add">
+            <button class="btn-add" type="submit"><i class='bx bx-plus'></i>Adicionar</button>
+            <button class="btn-return">
+              <a href="./page-livros.html">Cancelar <i class='bx bx-x-circle'></i></a>
+            </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

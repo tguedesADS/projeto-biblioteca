@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Página home */
+html,
+body {
+  height: 100vh;
+  background-color: #0c1416;
+  color: #cef5ff;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+
+#bg-detalhe {
+  position: absolute;
+  right: 0;
+  max-width: 20vw;
+}
+
+/* #bg-detalhe2 {
+  position: absolute;
+  left: 0;
+  top: 46.9rem;
+  max-width: 20vw;
+} */
+
+/* #bg-efeito {
+  position: absolute;
+  right: 0;
+  top: 16.4rem;
+  max-width: 40vw;
+} */
+
+#bg-imagem {
+  position: absolute;
+  right: 5rem;
+  top: 15rem;
+  max-width: 30vw;
+}
+
+#titulo {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 0 4rem 0 4rem;
+}
+
+.menu {
+  display: flex;
+  padding: 2rem;
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+}
+
+.menu a {
+  text-align: center;
+  padding: 3rem;
+  color: #cef5ff;
+  transition: 0.7s;
+}
+
+.menu a:hover {
+  color: #30bfcd;
+  text-decoration: underline;
+}
+
+.sessao-home {
+  padding: 9rem 7rem;
+}
+
+.subtitulo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitulo span {
+  color: #30bfcd;
+}
+
+#btn {
+  background-color: #30bfcd;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  margin-top: 1.1rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Página Livros */
+
+.sessao-livros {
+  margin: 4.6rem 8rem 4.6rem 8rem;
+  justify-content: center;
+}
+
+.sessao-livros h2 {
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: #cef5ff;
+}
+
+.box-input {
+  display: flex;
+  margin: 3rem 0 2rem 0;
+  background-color: #cef5ff;
+  padding: 0.2rem 0.2rem;
+  border-radius: 1rem;
+  width: 40vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-input i {
+  background-color: #30bfcd;
+  color: #fff;
+  border-radius: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  width: 3.7vw;
+  padding: 0.2rem 0;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.box-input i:hover {
+  background-color: #30c0cdc9;
+}
+
+#search {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  color: #0c1416;
+  width: 35vw;
+  padding-left: 1rem;
+}
+
+#btn-livro {
+  background-color: #30bfcd;
+  border: none;
+  padding: 0.4rem 3.1rem;
+  border-radius: 50px;
+  margin-top: 1.1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.cards-livro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.card-livro {
+  background-color: #0f272e;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1.8rem;
+  line-height: 1.5;
+  transition: 0.2s;
+}
+
+.card-livro:hover {
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(48, 192, 205, 1);
+  -moz-box-shadow: 0px 0px 19px 1px rgba(48, 192, 205, 1);
+  box-shadow: 0px 0px 19px 1px rgba(48, 192, 205, 1);
+}
+
+.nome-livro {
+  border-left: 6px solid #30bfcd;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #30bfcd;
+  padding-left: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.nome-autor {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.ano-livro,
+.nota-livro {
+  font-size: 0.8rem;
+}
+
+.genero-livro {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 0.5rem;
+  padding: 0.1rem;
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.genero-livro span {
+  background-color: #30bfcd;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.4rem;
+  color: #fff;
+}
+
+.genero-livro .remover {
+  background-color: #8b3b35;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.genero-livro .remover:hover {
+  transform: scale(1.1);
+}
+
+/* Página Add Livro */
+
+#voltar {
+  background-color: #30bfcd;
+  border: none;
+  padding: 0.4rem 2rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  margin-left: 2.5rem;
+}
+
+.sessao-add-livro {
+  margin: 4.6rem 8rem 4.6rem 10rem;
+  background-color: #0f272e;
+  border-radius: 1rem;
+  width: 45vw;
+  padding: 2rem;
+}
+
+#icon-livro {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 12rem;
+  color: #30bfcd;
+}
+
+.form-box {
+  width: 100%;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  margin: 15px 0;
+  font-size: 1.5rem;
+  color: #30bfcd;
+}
+
+.input-livro,
+.input-autor,
+.input-genero {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #30bfcd;
+  font-size: 1.4rem;
+  color: #fff;
+  width: 60%;
+}
+
+.input-data,
+.input-nota {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #30bfcd;
+  font-size: 1.4rem;
+  color: #fff;
+  width: 13%;
+}
+
+.btn-page-add {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.btn-add,
+.btn-return {
+  background-color: #30bfcd;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.2s;
+}
+
+.btn-add:hover {
+  background-color: #358b72;
+}
+
+.btn-return:hover {
+  background-color: #8b3b35;
+}
+
+/* Estilos para dispositivos móveis (ex: smartphones) */
+@media only screen and (max-width: 767px) {
+  /* Insira seus estilos para dispositivos móveis aqui */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para notebooks e dispositivos com telas maiores */
+@media only screen and (min-width: 768px) {
+  /* Insira seus estilos para notebooks e telas maiores aqui */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para dispositivos móveis com largura máxima de 480px (ex: smartphones em modo paisagem) */
+@media only screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #titulo {
+    font-size: 1.8rem;
+    margin-left: 0.2rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .menu {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    gap: 2rem;
+  }
+
+  .menu a {
+    padding: 0.4rem 0.7rem;
+  }
+
+  #bg-detalhe {
+    max-width: 25vw;
+  }
+
+  #bg-imagem {
+    top: 27rem;
+    right: 2rem;
+    max-width: 65vw;
+  }
+
+  .sessao-home {
+    padding: 7rem 4rem;
+  }
+
+  .subtitulo {
+    font-size: 1.7rem;
+  }
+
+  #btn {
+    padding: 0.4rem 1.3rem;
+    border-radius: 50px;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  /* Página Livros */
+
+  .sessao-livros {
+    margin: 4rem 3rem;
+  }
+  .sessao-livros h2 {
+    font-size: 1.2rem;
+  }
+  .box-input {
+    margin: 2rem 0 .8rem 0;
+    width: 75vw;
+  }
+
+  .box-input i {
+    padding: 0.2rem 0;
+    width: 12vw;
+  }
+  #search {
+    width: 55vw;
+  }
+  #btn-livro {
+    font-size: .8rem;
+    padding: 0.4rem 1.3rem;
+  }
+  .cards-livro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card-livro {
+    padding: 1.5rem;
+  }
+  .nome-livro {
+    font-size: 1.3rem;
+  }
+  .nome-autor {
+    font-size: 1rem;
+  }
+  .ano-livro,
+  .nota-livro {
+    font-size: 0.7rem;
+  }
+  .genero-livro {
+    padding: 0;
+  }
+}

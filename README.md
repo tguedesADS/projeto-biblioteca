@@ -15,7 +15,7 @@ ano de publicação e avaliações dos usuários.
 - Buscar Livro: Implemente uma funcionalidade de busca que permita aos usuários encontrar livros
   com base no título, autor ou gênero.
 
-- Remover Livors: Permita aos usuários remover livros do catálogo.
+- Remover Livro: Permita aos usuários remover livros do catálogo.
 
 - Salvar e Carregar do Arquivo JSON: Implemente funções para salvar as alterações no arquivo JSON e
   carregar os dados existentes ao iniciar o programa.

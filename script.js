@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <h4 class="nome-livro" id="nome-livro">${livro.nomeLivro}</h4>
               <span class="nome-autor" id="nome-autor">${livro.nomeAutor}</span>
               <p class="ano-livro">Publicado em: <span id="ano-livro">${livro.dataLivro}</span></p>
-              <p class="nota-livro">Avaliação: <span id="nota">${livro.notaLivro}</span></p>
+              <p class="nota-livro">Avaliação: <span id="nota">${livro.notaLivro}</span>/10</p>
               <div class="genero-livro">
                 <span id="genero">${livro.generoLivro}</span>  
                 <span class="remover" id="remover"><i class='bx bx-x-circle'></i> Excluir</span>
